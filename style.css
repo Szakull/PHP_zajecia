@@ -1,0 +1,285 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: arial;
+  font-size: 16px;
+}
+h1, h2 {
+   margin: 0 20px;
+}
+p { margin: 0.5em; }
+section {
+  position: relative;
+  margin:0;
+  padding:0;
+}
+body > header,
+body > nav,
+body > section,
+body > footer  {
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+}
+body > header,
+body > footer {
+   background-color: #333;
+   color: #eee;
+}
+body > nav {
+  background-color: #ddd;
+  padding: 5px 0;
+}
+body > footer {
+  padding: 1ex 0;
+  margin-top: 1ex;
+}
+
+/* sekcja */
+section  > nav {
+  padding-top: 10px;
+}
+section  > nav table {
+  width: 100%;
+}
+section  > nav td {
+  text-align:center;
+  width: 33%;
+}
+section footer p {
+   padding:0;
+   margin:0;
+}
+
+/* linki - przyciski */
+nav  a,
+article > footer a,
+.user-info a {
+  margin: 0;
+  padding: 1px;
+  border:  1px solid #333;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 1px #000;
+  display: inline-block;
+  width: 100px;
+}
+nav  a:hover,
+article > footer a:hover,
+.user-info a:hover,
+form button:hover {
+  background-color: #eee;
+  color: #233;
+  text-shadow: 0 1px #fff;
+  box-shadow: 1px 1px 3px #333;
+}
+section  > nav a {
+  width: 160px;
+  background-color: #666;
+}
+.user-info a {
+  width: auto;
+  padding: 3px 10px;
+}
+article {
+   padding: 0;
+   margin: 1ex 0;
+   border: 1px solid #aaa;
+   border-radius: 0 0 5px 5px;
+   background-color: #ddd;
+}
+article > div {
+   background-color: #fff;
+   padding: 1ex;
+}
+article > header {
+   padding: 1ex;
+}
+article > header >h2 {
+   padding: 0;
+   margin: 0;
+}
+article > footer {
+   text-align: right;
+   padding: 1ex;
+   font-size: 80%;
+}
+article > footer > nav{
+   float: left;
+   padding: 0;
+}
+
+form {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   background-color: #ddd;
+   border-radius: 5px;
+   text-align: center;
+}
+section#login form {
+   margin: 10px 0;
+}
+form > header h2 {
+   padding: 1ex;
+   margin: 0;
+   text-align: left;
+}
+form input,
+form textarea{
+  width: 95%;
+  margin: 1ex 0;
+  border-radius: 5px;
+  padding: 1ex;
+  font-family: arial;
+  font-size: 16px;
+  color: #003;
+  border: 1px solid #888;
+}
+form button {
+  font-weight: bold;
+  background-color: #888;
+  margin: 10px auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 120%;
+  text-shadow: 1px 1px #000;
+  color: #eee;
+}
+form button:hover {
+
+}
+footer {
+  text-align: center;
+  font-size: 80%;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.topic {
+  text-align: left;
+}
+.topic header {
+  color: #eee;
+  background-color: #666;
+}
+a.danger:hover { 
+  background-color: red; 
+  color: #eee;
+  text-shadow: 0 1px #003; 
+}
+.error {
+  width: 100%;
+  border: 1px colid #f00;
+  color: #f00;
+}
+.user-info {
+  text-align: right;
+}
+.user-info > div {
+  float: left;
+}
+.user-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 10px 0;
+}
+.user-info table td,
+.user-info table th {
+  width: 25%;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+article.post nav {
+    width:auto;
+    text-align:left;
+    margin:0;
+    padding:0 10px;
+}
+article.post nav form {
+    display: inline;
+    text-align:left;
+    margin:0;
+    padding:0;
+}
+article.post nav form input{
+    width:250px;
+    display: inline;
+    margin:0;
+    padding:0;
+    border: none;
+}
+article.post nav form input[type=file]{
+    font-size:90%;
+    background-color: #fff;
+}
+article.post nav form button {
+    width:auto;
+    display: inline;
+    margin:0;
+    padding:0 10px;
+    font-size: 90%;
+}
+article.post img,
+td.image img {
+    height: 100px;
+    margin: 5px;
+}
+article.post .image {
+    text-align: center;
+    display:inline-block;
+    background-color:transparent;
+    border: 1px solid #ccc;
+     border-radius: 3px;
+}
+td.image {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+article.post .image a, 
+article.post .image a:visited {
+  margin: 0;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background-color: #eee;
+  color: #888;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 3px;
+  width: 35%;
+}
+article.post .image a:hover{
+  background-color: #aaa;
+  color: #000;
+  box-shadow: 1px 1px 3px #333;
+  text-shadow: none;
+} 
+article.post .image a.danger:hover{
+  background-color: red;
+}
+
+.images-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.images-table table td {
+    text-align:center;
+}
+table caption {
+   font-size: 120%;
+   font-weight:bold;
+   color: #fff;
+   background-color: #888;
+   padding: 5px;
+   margin-top: 10px;
+   
+}
